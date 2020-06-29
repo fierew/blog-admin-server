@@ -5,6 +5,11 @@ import com.blog.admin.model.MenuModel;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 菜单树工具
+ *
+ * @author xuyang
+ */
 public class MenuTreeUtils {
     private final List<MenuModel> menuList;
 

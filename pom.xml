@@ -51,6 +51,18 @@
             <version>2.2.3</version>
         </dependency>
 
+        <!-- mail -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+
+        <!-- mail 模板 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
         <!-- swagger -->
         <dependency>
             <groupId>org.springdoc</groupId>

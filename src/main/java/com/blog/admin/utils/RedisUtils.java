@@ -9,6 +9,8 @@ import java.io.Serializable;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * redis 工具
+ * 
  * @author xuyang
  */
 @Component
