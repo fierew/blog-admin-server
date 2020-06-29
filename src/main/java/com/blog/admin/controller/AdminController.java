@@ -60,11 +60,11 @@ public class AdminController {
         menuList.add(new MenuModel(8, 5, "未知领域", "icon", 0, "key", "/admin", 1, 1000000, 100000));
         ;
         /*让我们创建树*/
-        MenuTreeUtils menuTree = new MenuTreeUtils(menuList);
-        menuList = menuTree.buildTree();
+        MenuTreeUtils menuTreeUtils = new MenuTreeUtils(menuList);
+        List<MenuModel> menuTreeList = menuTreeUtils.buildTree();
 
 
-        result.setData(menuList);
+        result.setData(menuTreeList);
         return result;
     }
 }
