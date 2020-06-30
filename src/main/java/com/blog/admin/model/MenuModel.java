@@ -4,6 +4,9 @@ import lombok.Data;
 
 import java.util.List;
 
+/**
+ * @author xuyang
+ */
 @Data
 public class MenuModel {
     private Integer id;

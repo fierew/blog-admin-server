@@ -2,6 +2,7 @@ package com.blog.admin.controller;
 
 import com.blog.admin.annotation.PassToken;
 import com.blog.admin.dto.Result;
+import com.blog.admin.model.LocaleMoles;
 import com.blog.admin.model.MenuModel;
 import com.blog.admin.utils.JwtUtils;
 import com.blog.admin.utils.MenuTreeUtils;
@@ -65,6 +66,37 @@ public class AdminController {
 
 
         result.setData(menuTreeList);
+        return result;
+    }
+
+    @PassToken
+    @GetMapping("/locales")
+    Result locales() {
+        List<LocaleMoles> menuList = new ArrayList<>();
+
+        menuList.add(new LocaleMoles("menu.dashboard.title","仪表盘"));
+        menuList.add(new LocaleMoles("menu.article.title", "文章管理"));
+        menuList.add(new LocaleMoles("menu.publish_article.title", "发表文章"));
+
+        Result result = new Result();
+        result.setCode(200);
+        result.setMsg("success");
+
+        result.setData(menuList);
+        return result;
+    }
+
+    @PassToken
+    @GetMapping("/routes")
+    Result routes() {
+        Result result = new Result();
+        result.setCode(200);
+        result.setMsg("success");
+
+        List<LocaleMoles> menuList = new ArrayList<>();
+
+        menuList.add(new LocaleMoles("login/index","仪表盘"));
+        result.setData(menuList);
         return result;
     }
 }
