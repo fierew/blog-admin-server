@@ -1,4 +1,4 @@
-package com.blog.admin.dto;
+package com.blog.admin.entity;
 
 import lombok.Data;
 

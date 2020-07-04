@@ -1,7 +1,7 @@
 package com.blog.admin.controller;
 
-import com.blog.admin.dto.Result;
-import com.blog.admin.dto.VaUserEntity;
+import com.blog.admin.entity.Result;
+import com.blog.admin.entity.VaUserEntity;
 import com.blog.admin.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;

@@ -1,7 +1,7 @@
 package com.blog.admin.controller;
 
 import com.blog.admin.annotation.PassToken;
-import com.blog.admin.dto.Result;
+import com.blog.admin.entity.Result;
 import com.blog.admin.model.LocaleMoles;
 import com.blog.admin.model.MenuModel;
 import com.blog.admin.utils.JwtUtils;
@@ -16,6 +16,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author xuyang
+ */
 @RestController
 public class AdminController {
     @PassToken
