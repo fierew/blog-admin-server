@@ -11,7 +11,7 @@
     <groupId>com.blog</groupId>
     <artifactId>admin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>admin</name>
+    <name>blog-admin</name>
     <description>博客后台API</description>
 
     <properties>
@@ -110,7 +110,7 @@
             <version>3.4.0</version>
         </dependency>
 
-        <!-- 工具 -->
+        <!-- 工具 文档地址：https://github.com/LJWLgl/CommonUtil -->
         <dependency>
             <groupId>io.github.ljwlgl</groupId>
             <artifactId>common-util</artifactId>
