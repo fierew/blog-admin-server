@@ -110,12 +110,12 @@
             <version>3.4.0</version>
         </dependency>
 
-        <!-- 工具 文档地址：https://github.com/LJWLgl/CommonUtil -->
-        <dependency>
-            <groupId>io.github.ljwlgl</groupId>
-            <artifactId>common-util</artifactId>
-            <version>2.1.0</version>
-        </dependency>
+        <!-- 工具 https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.commons</groupId>-->
+<!--            <artifactId>commons-lang3</artifactId>-->
+<!--            <version>3.10</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
