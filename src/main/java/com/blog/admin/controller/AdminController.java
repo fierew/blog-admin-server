@@ -54,14 +54,14 @@ public class AdminController {
         List<MenuModel> menuList = new ArrayList<>();
 
         /*插入一些数据*/
-        menuList.add(new MenuModel(1, 0, "系统管理", "icon", 0, "key", "/admin", 1, 1000000, 100000));
-        menuList.add(new MenuModel(2, 1, "权限管理", "icon", 0, "key", "/admin", 1, 1000000, 100000));
-        menuList.add(new MenuModel(3, 1, "密码修改", "icon", 0, "key", "/admin", 1, 1000000, 100000));
-        menuList.add(new MenuModel(4, 1, "新加用户", "icon", 0, "key", "/admin", 1, 1000000, 100000));
-        menuList.add(new MenuModel(5, 1, "系统监控", "icon", 0, "key", "/admin", 1, 1000000, 100000));
-        menuList.add(new MenuModel(6, 3, "在线用户", "icon", 0, "key", "/admin", 1, 1000000, 100000));
-        menuList.add(new MenuModel(7, 6, "订阅区", "icon", 0, "key", "/admin", 1, 1000000, 100000));
-        menuList.add(new MenuModel(8, 5, "未知领域", "icon", 0, "key", "/admin", 1, 1000000, 100000));
+        menuList.add(new MenuModel(1L, 0L, "系统管理", "icon", 0, "key", "/admin", 1, 1000000, 100000));
+        menuList.add(new MenuModel(2L, 1L, "权限管理", "icon", 0, "key", "/admin", 1, 1000000, 100000));
+        menuList.add(new MenuModel(3L, 1L, "密码修改", "icon", 0, "key", "/admin", 1, 1000000, 100000));
+        menuList.add(new MenuModel(4L, 1L, "新加用户", "icon", 0, "key", "/admin", 1, 1000000, 100000));
+        menuList.add(new MenuModel(5L, 1L, "系统监控", "icon", 0, "key", "/admin", 1, 1000000, 100000));
+        menuList.add(new MenuModel(6L, 3L, "在线用户", "icon", 0, "key", "/admin", 1, 1000000, 100000));
+        menuList.add(new MenuModel(7L, 6L, "订阅区", "icon", 0, "key", "/admin", 1, 1000000, 100000));
+        menuList.add(new MenuModel(8L, 5L, "未知领域", "icon", 0, "key", "/admin", 1, 1000000, 100000));
         ;
         /*让我们创建树*/
         MenuTreeUtils menuTreeUtils = new MenuTreeUtils(menuList);
