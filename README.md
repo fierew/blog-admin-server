@@ -1,4 +1,4 @@
-# Spring Boot 博客后台API
+# Spring Boot 博客后台服务
 
 ## 入门
 
