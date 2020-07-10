@@ -1,5 +1,7 @@
 package com.blog.admin.model;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import lombok.Data;
 
 import java.util.List;
@@ -9,8 +11,10 @@ import java.util.List;
  */
 @Data
 public class MenuModel {
-    private Integer id;
-    private Integer parentId;
+    @JsonSerialize(using= ToStringSerializer.class)
+    private Long id;
+    @JsonSerialize(using= ToStringSerializer.class)
+    private Long parentId;
     private String name;
     private String icon;
     private Integer sort;
@@ -21,7 +25,7 @@ public class MenuModel {
     private Integer createTime;
     private List<MenuModel> children;
 
-    public MenuModel(Integer id, Integer parentId, String name, String icon, Integer sort, String key, String path, Integer state, Integer updateTime, Integer createTime) {
+    public MenuModel(Long id, Long parentId, String name, String icon, Integer sort, String key, String path, Integer state, Integer updateTime, Integer createTime) {
         this.id = id;
         this.parentId = parentId;
         this.name = name;

@@ -1,5 +1,7 @@
 package com.blog.admin.model;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import lombok.Data;
 
 /**
@@ -7,12 +9,15 @@ import lombok.Data;
  */
 @Data
 public class FileModel {
-    private Integer id;
-    private Integer userId;
+    @JsonSerialize(using= ToStringSerializer.class)
+    private Long id;
+    @JsonSerialize(using= ToStringSerializer.class)
+    private Long userId;
     private String name;
     private String type;
     private String path;
-    private Integer size;
+    @JsonSerialize(using= ToStringSerializer.class)
+    private Long size;
     private String hash;
     private Byte isDelete;
     private Integer createTime;

@@ -1,5 +1,7 @@
 package com.blog.admin.model;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import lombok.Data;
 
 /**
@@ -7,5 +9,6 @@ import lombok.Data;
  */
 @Data
 public class AdminModel {
-    private Integer id;
+    @JsonSerialize(using= ToStringSerializer.class)
+    private Long id;
 }
