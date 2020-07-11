@@ -10,10 +10,10 @@ import java.util.List;
  *
  * @author xuyang
  */
-public class MenuTreeUtils {
+public class MenuTreeUtil {
     private final List<MenuModel> menuList;
 
-    public MenuTreeUtils(List<MenuModel> menuList) {
+    public MenuTreeUtil(List<MenuModel> menuList) {
         this.menuList = menuList;
     }
 

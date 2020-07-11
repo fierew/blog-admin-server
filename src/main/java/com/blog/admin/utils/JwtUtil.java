@@ -16,7 +16,7 @@ import java.util.Map;
  *
  * @author xuyang
  */
-public class JwtUtils {
+public class JwtUtil {
     /**
      * 过期时间为一天
      * TODO 正式上线更换为15分钟

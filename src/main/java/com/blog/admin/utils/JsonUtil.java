@@ -16,7 +16,7 @@ import java.util.Map;
  *
  * @author xuyang
  */
-public class JsonUtils {
+public class JsonUtil {
     private final static ObjectMapper objectMapper = new ObjectMapper();
 
     public static ObjectMapper getInstance() {

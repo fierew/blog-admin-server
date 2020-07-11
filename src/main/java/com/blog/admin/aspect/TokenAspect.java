@@ -2,7 +2,7 @@ package com.blog.admin.aspect;
 
 import com.auth0.jwt.interfaces.Claim;
 import com.blog.admin.annotation.PassToken;
-import com.blog.admin.utils.JwtUtils;
+import com.blog.admin.utils.JwtUtil;
 import com.blog.admin.entity.Result;
 import com.blog.admin.entity.VaUserEntity;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -114,7 +114,7 @@ public class TokenAspect {
         }
 
         // 解析token并获取token中的用户信息
-        Map<String, Claim> claims = JwtUtils.verity(token);
+        Map<String, Claim> claims = JwtUtil.verity(token);
 
         //得到这个方法控制器的所有形参
         Object[] args = joinPoint.getArgs();

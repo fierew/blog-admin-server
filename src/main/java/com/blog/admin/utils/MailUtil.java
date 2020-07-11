@@ -22,7 +22,7 @@ import java.util.Map;
  * @author xuyang
  */
 @Slf4j
-public class MailUtils {
+public class MailUtil {
     @Value("${spring.mail.username}")
     private String from;
 

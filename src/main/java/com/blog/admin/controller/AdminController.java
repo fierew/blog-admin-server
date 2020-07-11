@@ -4,8 +4,8 @@ import com.blog.admin.annotation.PassToken;
 import com.blog.admin.entity.Result;
 import com.blog.admin.model.LocaleMoles;
 import com.blog.admin.model.MenuModel;
-import com.blog.admin.utils.JwtUtils;
-import com.blog.admin.utils.MenuTreeUtils;
+import com.blog.admin.utils.JwtUtil;
+import com.blog.admin.utils.MenuTreeUtil;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -25,7 +25,7 @@ public class AdminController {
     @PostMapping("/login")
     Result login(@RequestParam(name = "username") String username,
                  @RequestParam(name = "password") String password) {
-        String token = JwtUtils.sign(1, username, "admin");
+        String token = JwtUtil.sign(1, username, "admin");
         Result result = new Result();
         result.setCode(200);
         result.setMsg("success");
@@ -64,7 +64,7 @@ public class AdminController {
         menuList.add(new MenuModel(8L, 5L, "未知领域", "icon", 0, "key", "/admin", 1, 1000000, 100000));
         ;
         /*让我们创建树*/
-        MenuTreeUtils menuTreeUtils = new MenuTreeUtils(menuList);
+        MenuTreeUtil menuTreeUtils = new MenuTreeUtil(menuList);
         List<MenuModel> menuTreeList = menuTreeUtils.buildTree();
 
 
