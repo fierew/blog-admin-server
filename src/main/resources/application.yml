@@ -101,7 +101,7 @@ mybatis:
   mapperLocations: classpath:mapper/*.xml
   configuration:
     mapUnderscoreToCamelCase: true
-management:
+management:   # springboot admin 选择要公开的端点
   endpoints:
     web:
       exposure:

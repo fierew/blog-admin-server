@@ -11,7 +11,7 @@ import javax.sql.DataSource;
 /**
  * @author xuyang
  */
-@Configuration    //此注解标注此Java类为一个配置类
+@Configuration
 public class DruidConfig {
     @Bean
     @Primary
