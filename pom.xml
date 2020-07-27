@@ -15,7 +15,7 @@
     <description>博客后台API</description>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>14</java.version>
     </properties>
 
     <dependencies>

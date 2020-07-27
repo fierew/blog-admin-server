@@ -1,4 +1,4 @@
-# Spring Boot 博客后台服务
+# Spring Boot 计量鉴定后台服务
 
 ## 入门
 
@@ -7,7 +7,7 @@
 启动开发服务,
 
 ```bash
-$ mvn spring-boot :run
+$ mvn spring-boot:run
 ```
 
 ## 打包
