@@ -114,6 +114,7 @@ pagehelper:
   reasonable: true    #分页合理化参数，默认值为false
   support-methods-arguments: true    #支持通过 Mapper 接口参数来传递分页参数，默认值false
 logging:
+  config: classpath:config/logback-spring.xml
   file:
     path: ./logger
   pattern:
